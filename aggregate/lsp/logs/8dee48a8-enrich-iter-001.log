@@ -1,0 +1,35 @@
+[2026-04-14T17:17:43Z] === ENRICH ITERATION 1 START | repo=apache/iceberg-python sha=8dee48a8 ===
+[2026-04-14T17:17:43Z] [iter=1] PHASE START: enrich repo=apache/iceberg-python sha=8dee48a8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/8dee48a8-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/8dee48a8e0218353f706133ed035334869a7ee12.nq.gz
+[2026-04-14T17:18:08Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-14T17:18:45Z] [iter=1] AST store loaded triples=4107796 load_secs=35 mem_mb=937 MB
+[2026-04-14T17:18:45Z] [iter=1] Step 2: Finding LSP targets mem_mb=937 MB
+[2026-04-14T17:18:51Z] [iter=1] LSP targets found call_sites=35918 imports=2020 extends=397 implements=0 secs=6
+[2026-04-14T17:18:55Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=937 MB
+[2026-04-14T17:19:22Z] [iter=1] Position index built positions=271902 nodes_with_types=359304 secs=27 mem_mb=975 MB
+[2026-04-14T17:19:22Z] [iter=1] Step 3: Starting LSP resolution mem_mb=975 MB already_completed_types=[] already_completed_files=0
+[2026-04-14T17:19:22Z] [iter=1] Resolving target type target_type=call_site count=35918
+[2026-04-14T17:19:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=0 resolved=0 errors=0 current=tests/expressions/test_expressions.py
+[2026-04-14T17:44:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.8 files_done=1 resolved=245 errors=926 current=tests/test_transforms.py
+[2026-04-14T18:18:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.3 files_done=2 resolved=335 errors=2197 current=pyiceberg/partitioning.py
+[2026-04-14T18:20:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.8 files_done=3 resolved=414 errors=2255 current=tests/expressions/test_visitors.py
+[2026-04-14T18:55:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.2 files_done=4 resolved=427 errors=3563 current=pyiceberg/catalog/dynamodb.py
+[2026-04-14T18:59:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.7 files_done=5 resolved=461 errors=3690 current=pyiceberg/table/update/snapshot.py
+[2026-04-14T19:04:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.7 files_done=6 resolved=507 errors=3875 current=tests/integration/test_add_files.py
+[2026-04-14T19:11:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.8 files_done=7 resolved=554 errors=4136 current=pyiceberg/catalog/__init__.py
+[2026-04-14T19:14:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.1 files_done=8 resolved=601 errors=4260 current=tests/conftest.py
+[2026-04-14T19:27:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.8 files_done=9 resolved=674 errors=4726 current=tests/benchmark/test_memory_benchmark.py
+[2026-04-14T19:28:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.6 files_done=10 resolved=726 errors=4755 current=tests/integration/test_writes/test_writes.py
+[2026-04-14T19:46:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.6 files_done=11 resolved=870 errors=5416 current=tests/utils/test_lazydict.py
+[2026-04-14T19:55:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=157.7 files_done=13 resolved=890 errors=5754 current=pyiceberg/catalog/glue.py
+[2026-04-14T19:58:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=161.2 files_done=14 resolved=912 errors=5885 current=pyiceberg/avro/file.py
+[2026-04-14T20:00:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=162.8 files_done=15 resolved=927 errors=5943 current=tests/table/test_init.py
+[2026-04-14T20:17:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=179.3 files_done=16 resolved=1012 errors=6549 current=tests/io/test_pyarrow.py
+[2026-04-14T20:50:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=213.1 files_done=17 resolved=1422 errors=7793 current=tests/table/test_validate.py
+[2026-04-14T20:52:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=214.4 files_done=18 resolved=1454 errors=7840 current=pyiceberg/io/pyarrow.py
+[2026-04-14T21:09:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.7 files_done=19 resolved=1647 errors=8476 current=pyiceberg/table/update/__init__.py
+[2026-04-14T21:13:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=235.3 files_done=20 resolved=1770 errors=8609 current=pyiceberg/conversions.py
+[2026-04-14T21:16:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=238.6 files_done=21 resolved=1836 errors=8729 current=tests/test_schema.py
+[2026-04-14T21:17:47Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=21 new_files_this_iter=21 mem_mb=978 MB
+[2026-04-14T21:17:47Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/8dee48a8e0218353f706133ed035334869a7ee12.nq.gz triples=59557
+[2026-04-14T21:17:48Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-14T21:17:48Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14404 elapsed_min=240.1 files_completed=21
