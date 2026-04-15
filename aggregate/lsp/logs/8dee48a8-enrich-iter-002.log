@@ -1,0 +1,43 @@
+[2026-04-14T21:22:50Z] === ENRICH ITERATION 2 START | repo=apache/iceberg-python sha=8dee48a8 ===
+[2026-04-14T21:22:50Z] [iter=2] PHASE START: enrich repo=apache/iceberg-python sha=8dee48a8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/8dee48a8-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/8dee48a8e0218353f706133ed035334869a7ee12.nq.gz
+[2026-04-14T21:23:12Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-14T21:23:51Z] [iter=2] AST store loaded triples=4107796 load_secs=37 mem_mb=986 MB
+[2026-04-14T21:23:51Z] [iter=2] Step 2: Finding LSP targets mem_mb=986 MB
+[2026-04-14T21:23:57Z] [iter=2] LSP targets found call_sites=35918 imports=2020 extends=397 implements=0 secs=6
+[2026-04-14T21:24:00Z] [iter=2] Loaded checkpoint partial graph triples=59557
+[2026-04-14T21:24:04Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=986 MB
+[2026-04-14T21:24:33Z] [iter=2] Position index built positions=271902 nodes_with_types=359304 secs=28 mem_mb=1077 MB
+[2026-04-14T21:24:33Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1077 MB already_completed_types=[] already_completed_files=21
+[2026-04-14T21:24:33Z] [iter=2] Resolving target type target_type=call_site count=35918
+[2026-04-14T21:24:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=0 resolved=0 errors=0 current=tests/test_schema.py
+[2026-04-14T21:49:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=27.1 files_done=1 resolved=49 errors=915 current=tests/integration/test_partition_evolution.py
+[2026-04-14T22:04:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=41.6 files_done=2 resolved=70 errors=1436 current=tests/avro/test_decoder.py
+[2026-04-14T22:05:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=43.1 files_done=3 resolved=77 errors=1490 current=pyiceberg/cli/output.py
+[2026-04-14T22:07:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=44.5 files_done=4 resolved=128 errors=1538 current=dev/provision.py
+[2026-04-14T22:09:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=46.5 files_done=5 resolved=128 errors=1610 current=pyiceberg/table/inspect.py
+[2026-04-14T22:12:29Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=49.6 files_done=6 resolved=150 errors=1724 current=tests/expressions/test_literals.py
+[2026-04-14T22:28:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=65.4 files_done=7 resolved=285 errors=2288 current=pyiceberg/expressions/literals.py
+[2026-04-14T22:32:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=69.5 files_done=8 resolved=427 errors=2437 current=tests/avro/test_resolver.py
+[2026-04-14T22:38:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=76.1 files_done=9 resolved=438 errors=2674 current=pyiceberg/manifest.py
+[2026-04-14T22:48:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=85.4 files_done=10 resolved=496 errors=3006 current=tests/table/test_delete_file_index.py
+[2026-04-14T22:50:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=87.7 files_done=11 resolved=513 errors=3090 current=tests/integration/test_partitioning_key.py
+[2026-04-14T22:54:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=91.7 files_done=12 resolved=518 errors=3235 current=tests/integration/test_writes/utils.py
+[2026-04-14T22:55:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=92.5 files_done=13 resolved=518 errors=3263 current=pyiceberg/schema.py
+[2026-04-14T23:03:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=100.7 files_done=14 resolved=653 errors=3557 current=pyiceberg/catalog/sql.py
+[2026-04-14T23:08:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=105.3 files_done=15 resolved=664 errors=3724 current=pyiceberg/transforms.py
+[2026-04-14T23:14:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=111.9 files_done=16 resolved=845 errors=3962 current=tests/integration/test_deletes.py
+[2026-04-14T23:22:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=120.0 files_done=17 resolved=880 errors=4254 current=tests/expressions/test_residual_evaluator.py
+[2026-04-14T23:28:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=125.5 files_done=18 resolved=885 errors=4450 current=tests/expressions/test_evaluator.py
+[2026-04-14T23:57:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=154.8 files_done=19 resolved=906 errors=5502 current=tests/cli/test_console.py
+[2026-04-15T00:02:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=160.0 files_done=20 resolved=991 errors=5689 current=tests/io/test_pyarrow_visitor.py
+[2026-04-15T00:09:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=166.5 files_done=21 resolved=1012 errors=5921 current=pyiceberg/table/update/sorting.py
+[2026-04-15T00:17:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=175.0 files_done=23 resolved=1120 errors=6227 current=tests/expressions/test_projection.py
+[2026-04-15T00:24:14Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=181.4 files_done=24 resolved=1128 errors=6458 current=pyiceberg/expressions/__init__.py
+[2026-04-15T00:27:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=184.7 files_done=25 resolved=1311 errors=6578 current=pyiceberg/table/name_mapping.py
+[2026-04-15T00:29:03Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=186.2 files_done=26 resolved=1342 errors=6631 current=tests/integration/test_rest_schema.py
+[2026-04-15T01:13:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=231.0 files_done=27 resolved=1401 errors=8240 current=tests/table/test_upsert.py
+[2026-04-15T01:19:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=237.0 files_done=28 resolved=1412 errors=8453 current=pyiceberg/cli/console.py
+[2026-04-15T01:22:59Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=240.2 files_completed=49 new_files_this_iter=28 mem_mb=1089 MB
+[2026-04-15T01:22:59Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/8dee48a8e0218353f706133ed035334869a7ee12.nq.gz triples=102481
+[2026-04-15T01:23:02Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-04-15T01:23:02Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=14409 elapsed_min=240.2 files_completed=49
