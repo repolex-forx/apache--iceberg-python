@@ -1,0 +1,30 @@
+[2026-04-15T05:34:34Z] === ENRICH ITERATION 4 START | repo=apache/iceberg-python sha=8dee48a8 ===
+[2026-04-15T05:34:34Z] [iter=4] PHASE START: enrich repo=apache/iceberg-python sha=8dee48a8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/8dee48a8-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/8dee48a8e0218353f706133ed035334869a7ee12.nq.gz
+[2026-04-15T05:34:54Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-15T05:35:29Z] [iter=4] AST store loaded triples=4107796 load_secs=34 mem_mb=931 MB
+[2026-04-15T05:35:29Z] [iter=4] Step 2: Finding LSP targets mem_mb=931 MB
+[2026-04-15T05:35:35Z] [iter=4] LSP targets found call_sites=35918 imports=2020 extends=397 implements=0 secs=6
+[2026-04-15T05:35:42Z] [iter=4] Loaded checkpoint partial graph triples=157767
+[2026-04-15T05:35:47Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=931 MB
+[2026-04-15T05:36:13Z] [iter=4] Position index built positions=271902 nodes_with_types=359304 secs=26 mem_mb=1280 MB
+[2026-04-15T05:36:13Z] [iter=4] Step 3: Starting LSP resolution mem_mb=1280 MB already_completed_types=[] already_completed_files=139
+[2026-04-15T05:36:13Z] [iter=4] Resolving target type target_type=call_site count=35918
+[2026-04-15T05:36:14Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=0 resolved=0 errors=0 current=tests/catalog/test_bigquery_metastore.py
+[2026-04-15T05:37:16Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=2.7 files_done=1 resolved=13 errors=38 current=tests/table/test_manage_snapshots.py
+[2026-04-15T05:38:44Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=2 resolved=35 errors=92 current=tests/integration/test_writes/test_optimistic_concurrency.py
+[2026-04-15T05:40:19Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=4 resolved=47 errors=150 current=tests/utils/test_concurrent.py
+[2026-04-15T05:40:50Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=6 resolved=86 errors=169 current=pyiceberg/avro/__init__.py
+[2026-04-15T05:41:24Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=11 resolved=114 errors=190 current=tests/integration/test_statistics_operations.py
+[2026-04-15T05:41:57Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=7.4 files_done=12 resolved=117 errors=210 current=pyiceberg/utils/concurrent.py
+[2026-04-15T05:42:36Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=8.0 files_done=15 resolved=131 errors=234 current=tests/utils/test_singleton.py
+[2026-04-15T05:43:11Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=8.6 files_done=17 resolved=144 errors=255 current=pyiceberg/catalog/memory.py
+[2026-04-15T05:43:44Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=25 resolved=180 errors=275 current=pyiceberg/table/update/statistics.py
+[2026-04-15T05:43:48Z] [iter=4] Target type resolved target_type=call_site resolved=186 errors=277 secs=455 mem_mb=1284 MB
+[2026-04-15T05:43:48Z] [iter=4] Resolving target type target_type=import_statement count=2020
+[2026-04-15T05:43:51Z] [iter=4] Target type resolved target_type=import_statement resolved=117 errors=0 secs=3 mem_mb=1284 MB
+[2026-04-15T05:43:51Z] [iter=4] Resolving target type target_type=extends_clause count=397
+[2026-04-15T05:43:52Z] [iter=4] Target type resolved target_type=extends_clause resolved=48 errors=0 secs=2 mem_mb=1284 MB
+[2026-04-15T05:44:16Z] [iter=4] Step 5: Writing final enrichment file triples=252040
+[2026-04-15T05:44:21Z] [iter=4] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/8dee48a8e0218353f706133ed035334869a7ee12.nq.gz size_kb=5802
+[2026-04-15T05:44:21Z] [iter=4] Checkpoint cleared (enrichment complete)
+[2026-04-15T05:44:21Z] [iter=4] PHASE END: enrich elapsed_s=587 elapsed_min=9.8 total_triples=252040
