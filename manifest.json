@@ -5,8 +5,8 @@
   "versions": [
     {
       "commit": "8dee48a8e0218353f706133ed035334869a7ee12",
-      "parsed_at": "2026-04-14T17:00:59.171836+00:00",
-      "tag": "pyiceberg-0.11.1",
+      "parsed_at": "2026-04-15T05:58:14.794034+00:00",
+      "tag": "pyiceberg-0.11.1rc3",
       "filetree": "filetree/8dee48a8e0218353f706133ed035334869a7ee12.nq.gz",
       "blobs": [
         "blob/a37f3be8b08f218949a5127571208be05db8a4d7.nq.gz",
