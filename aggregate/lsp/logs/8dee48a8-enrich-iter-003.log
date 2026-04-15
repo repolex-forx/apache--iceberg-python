@@ -1,0 +1,86 @@
+[2026-04-15T01:28:31Z] === ENRICH ITERATION 3 START | repo=apache/iceberg-python sha=8dee48a8 ===
+[2026-04-15T01:28:31Z] [iter=3] PHASE START: enrich repo=apache/iceberg-python sha=8dee48a8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/8dee48a8-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/8dee48a8e0218353f706133ed035334869a7ee12.nq.gz
+[2026-04-15T01:28:50Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-04-15T01:29:27Z] [iter=3] AST store loaded triples=4107796 load_secs=36 mem_mb=993 MB
+[2026-04-15T01:29:27Z] [iter=3] Step 2: Finding LSP targets mem_mb=993 MB
+[2026-04-15T01:29:33Z] [iter=3] LSP targets found call_sites=35918 imports=2020 extends=397 implements=0 secs=6
+[2026-04-15T01:29:37Z] [iter=3] Loaded checkpoint partial graph triples=102481
+[2026-04-15T01:29:41Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=993 MB
+[2026-04-15T01:30:07Z] [iter=3] Position index built positions=271902 nodes_with_types=359304 secs=26 mem_mb=1019 MB
+[2026-04-15T01:30:07Z] [iter=3] Step 3: Starting LSP resolution mem_mb=1019 MB already_completed_types=[] already_completed_files=49
+[2026-04-15T01:30:07Z] [iter=3] Resolving target type target_type=call_site count=35918
+[2026-04-15T01:30:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=0 resolved=0 errors=0 current=pyiceberg/cli/console.py
+[2026-04-15T01:33:58Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=5.5 files_done=1 resolved=11 errors=141 current=tests/expressions/test_parser.py
+[2026-04-15T01:39:54Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.4 files_done=2 resolved=17 errors=358 current=tests/integration/test_writes/test_partitioned_writes.py
+[2026-04-15T01:50:37Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=22.1 files_done=3 resolved=66 errors=753 current=pyiceberg/expressions/visitors.py
+[2026-04-15T02:02:02Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=33.5 files_done=4 resolved=163 errors=1175 current=tests/integration/test_reads.py
+[2026-04-15T02:17:06Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=48.6 files_done=5 resolved=237 errors=1732 current=tests/table/test_snapshots.py
+[2026-04-15T02:19:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=51.4 files_done=6 resolved=251 errors=1837 current=tests/test_types.py
+[2026-04-15T02:26:12Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=57.7 files_done=7 resolved=364 errors=2069 current=pyiceberg/utils/schema_conversion.py
+[2026-04-15T02:27:33Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=59.0 files_done=8 resolved=394 errors=2119 current=tests/catalog/integration_test_glue.py
+[2026-04-15T02:32:27Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=63.9 files_done=9 resolved=401 errors=2301 current=tests/catalog/test_scan_planning_models.py
+[2026-04-15T02:34:39Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=66.1 files_done=10 resolved=450 errors=2382 current=tests/catalog/integration_test_dynamodb.py
+[2026-04-15T02:37:36Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=69.1 files_done=11 resolved=453 errors=2492 current=tests/catalog/test_rest.py
+[2026-04-15T02:49:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=80.6 files_done=12 resolved=529 errors=2920 current=pyiceberg/avro/decoder.py
+[2026-04-15T02:49:53Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=81.4 files_done=13 resolved=547 errors=2948 current=pyiceberg/table/update/spec.py
+[2026-04-15T02:51:46Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=83.3 files_done=14 resolved=573 errors=3018 current=pyiceberg/catalog/hive.py
+[2026-04-15T02:55:24Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=86.9 files_done=15 resolved=599 errors=3153 current=pyiceberg/utils/parsing.py
+[2026-04-15T03:04:11Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=95.7 files_done=17 resolved=673 errors=3477 current=tests/integration/test_rest_scan_planning_integration.py
+[2026-04-15T03:07:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=99.4 files_done=18 resolved=692 errors=3614 current=tests/catalog/test_catalog_behaviors.py
+[2026-04-15T03:20:41Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=112.2 files_done=19 resolved=735 errors=4090 current=tests/avro/test_file.py
+[2026-04-15T03:22:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=114.4 files_done=20 resolved=779 errors=4170 current=tests/table/test_statistics.py
+[2026-04-15T03:28:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=120.3 files_done=22 resolved=864 errors=4390 current=tests/table/test_metadata.py
+[2026-04-15T03:34:28Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=126.0 files_done=23 resolved=896 errors=4596 current=pyiceberg/catalog/rest/__init__.py
+[2026-04-15T03:42:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=133.9 files_done=24 resolved=976 errors=4889 current=tests/test_conversions.py
+[2026-04-15T03:48:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=139.8 files_done=25 resolved=1063 errors=5106 current=pyiceberg/avro/writer.py
+[2026-04-15T03:49:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=140.6 files_done=26 resolved=1102 errors=5138 current=tests/catalog/test_hive.py
+[2026-04-15T03:58:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=150.0 files_done=27 resolved=1186 errors=5484 current=tests/utils/test_manifest.py
+[2026-04-15T04:01:40Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=153.2 files_done=28 resolved=1225 errors=5602 current=tests/catalog/test_dynamodb.py
+[2026-04-15T04:06:46Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=158.3 files_done=29 resolved=1235 errors=5792 current=tests/integration/test_snapshot_operations.py
+[2026-04-15T04:10:44Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=162.2 files_done=30 resolved=1247 errors=5939 current=pyiceberg/table/update/validate.py
+[2026-04-15T04:11:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=162.8 files_done=31 resolved=1250 errors=5959 current=pyiceberg/table/metadata.py
+[2026-04-15T04:13:07Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=164.6 files_done=32 resolved=1318 errors=6028 current=pyiceberg/io/fsspec.py
+[2026-04-15T04:15:28Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=167.0 files_done=33 resolved=1353 errors=6115 current=tests/integration/test_rest_manifest.py
+[2026-04-15T04:23:44Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=175.2 files_done=35 resolved=1391 errors=6422 current=pyiceberg/table/__init__.py
+[2026-04-15T04:32:14Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=183.7 files_done=36 resolved=1507 errors=6737 current=tests/benchmark/test_benchmark.py
+[2026-04-15T04:34:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=186.1 files_done=38 resolved=1519 errors=6826 current=tests/table/test_partitioning.py
+[2026-04-15T04:38:32Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=190.0 files_done=39 resolved=1535 errors=6971 current=tests/avro/test_encoder.py
+[2026-04-15T04:39:27Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=190.9 files_done=40 resolved=1548 errors=7005 current=tests/utils/test_schema_conversion.py
+[2026-04-15T04:42:21Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=193.8 files_done=41 resolved=1555 errors=7112 current=tests/table/test_expire_snapshots.py
+[2026-04-15T04:43:50Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=195.3 files_done=42 resolved=1606 errors=7167 current=tests/utils/test_properties.py
+[2026-04-15T04:44:33Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=196.0 files_done=44 resolved=1611 errors=7194 current=pyiceberg/avro/resolver.py
+[2026-04-15T04:47:30Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=199.0 files_done=45 resolved=1642 errors=7303 current=pyiceberg/table/update/schema.py
+[2026-04-15T04:51:00Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=202.5 files_done=46 resolved=1742 errors=7433 current=tests/table/test_datafusion.py
+[2026-04-15T04:52:45Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=204.2 files_done=48 resolved=1784 errors=7498 current=pyiceberg/types.py
+[2026-04-15T04:54:06Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=205.6 files_done=49 resolved=1875 errors=7548 current=tests/table/test_name_mapping.py
+[2026-04-15T04:57:55Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=209.4 files_done=50 resolved=1876 errors=7690 current=pyiceberg/catalog/bigquery_metastore.py
+[2026-04-15T04:59:50Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=211.3 files_done=51 resolved=1887 errors=7761 current=pyiceberg/expressions/parser.py
+[2026-04-15T05:01:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=212.5 files_done=52 resolved=1936 errors=7806 current=tests/utils/test_config.py
+[2026-04-15T05:02:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=213.6 files_done=53 resolved=1950 errors=7846 current=tests/integration/test_delete_count.py
+[2026-04-15T05:03:45Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=215.2 files_done=54 resolved=1964 errors=7906 current=tests/catalog/test_rest_auth.py
+[2026-04-15T05:04:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=216.4 files_done=55 resolved=2008 errors=7950 current=pyiceberg/serializers.py
+[2026-04-15T05:05:26Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=216.9 files_done=56 resolved=2010 errors=7969 current=tests/io/test_io.py
+[2026-04-15T05:07:31Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=219.0 files_done=57 resolved=2068 errors=8046 current=pyiceberg/avro/codecs/zstandard_codec.py
+[2026-04-15T05:08:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=220.1 files_done=60 resolved=2090 errors=8087 current=pyiceberg/utils/config.py
+[2026-04-15T05:09:23Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=220.9 files_done=61 resolved=2119 errors=8115 current=tests/avro/test_writer.py
+[2026-04-15T05:12:13Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=223.7 files_done=62 resolved=2129 errors=8220 current=pyiceberg/table/delete_file_index.py
+[2026-04-15T05:12:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=224.4 files_done=63 resolved=2134 errors=8247 current=tests/integration/test_hive_migration.py
+[2026-04-15T05:13:47Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=225.3 files_done=64 resolved=2139 errors=8278 current=tests/avro/test_reader.py
+[2026-04-15T05:15:49Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=227.3 files_done=65 resolved=2143 errors=8354 current=tests/table/test_sorting.py
+[2026-04-15T05:17:09Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=228.6 files_done=66 resolved=2152 errors=8403 current=pyiceberg/catalog/rest/auth.py
+[2026-04-15T05:17:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=229.4 files_done=67 resolved=2172 errors=8433 current=pyiceberg/table/upsert_util.py
+[2026-04-15T05:18:49Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=230.3 files_done=68 resolved=2189 errors=8465 current=pyiceberg/table/locations.py
+[2026-04-15T05:19:31Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=231.0 files_done=69 resolved=2204 errors=8491 current=tests/table/test_locations.py
+[2026-04-15T05:20:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=232.0 files_done=70 resolved=2206 errors=8527 current=pyiceberg/table/sorting.py
+[2026-04-15T05:21:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=232.8 files_done=72 resolved=2235 errors=8556 current=pyiceberg/avro/encoder.py
+[2026-04-15T05:21:55Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=233.4 files_done=74 resolved=2265 errors=8580 current=pyiceberg/catalog/rest/scan_planning.py
+[2026-04-15T05:22:32Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=234.0 files_done=77 resolved=2344 errors=8603 current=tests/utils/test_bin_packing.py
+[2026-04-15T05:23:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=234.5 files_done=80 resolved=2368 errors=8622 current=tests/test_serializers.py
+[2026-04-15T05:25:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=236.7 files_done=82 resolved=2408 errors=8704 current=tests/table/test_refs.py
+[2026-04-15T05:26:32Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=238.0 files_done=86 resolved=2460 errors=8751 current=tests/test_avro_sanitization.py
+[2026-04-15T05:27:39Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=239.1 files_done=87 resolved=2473 errors=8793 current=tests/test_typedef.py
+[2026-04-15T05:28:10Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=239.7 files_done=89 resolved=2483 errors=8812 current=tests/io/test_fsspec_profile.py
+[2026-04-15T05:28:31Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=139 new_files_this_iter=90 mem_mb=1086 MB
+[2026-04-15T05:28:31Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/8dee48a8e0218353f706133ed035334869a7ee12.nq.gz triples=157767
+[2026-04-15T05:28:35Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-04-15T05:28:35Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=14401 elapsed_min=240.0 files_completed=139
