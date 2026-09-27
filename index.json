@@ -1,5 +1,11 @@
 {
   "org": "apache",
   "repo": "iceberg-python",
-  "versions": []
+  "versions": [
+    {
+      "commit": "8dee48a8e0218353f706133ed035334869a7ee12",
+      "tag": "pyiceberg-0.11.1rc3",
+      "parsed_at": "2026-09-27T07:09:18.015934+00:00"
+    }
+  ]
 }
